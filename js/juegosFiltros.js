@@ -18,7 +18,7 @@ function mostrarJuegosPorNombre(nombre)
                 <a href="juegos/${juego.link}.html">
                     <span>${juego.nombre}</span>
                     <img 
-                        src="images/juegos/${juego.img}" 
+                        src="images/juegos/${juego.img_1}" 
                         class="img-uniform border border-dark border-1"
                     >
                 </a>
@@ -54,7 +54,7 @@ function mostrarJuegosPorPrecio(precioMin, precioMax)
                 <a href="juegos/${juego.link}.html">
                     <span>${juego.nombre} - $${juego.precio}</span>
                     <img 
-                        src="images/juegos/${juego.img}" 
+                        src="images/juegos/${juego.img_1}" 
                         class="img-uniform border border-dark border-1"
                     >
                 </a>
@@ -87,7 +87,7 @@ function ordenarJuegosPorPrecio(ordenamiento)
                 <a href="producto.html?juego=${juego.link}">
                     <span>${juego.nombre} - $${juego.precio}</span>
                     <img 
-                        src="images/juegos/${juego.img}" 
+                        src="images/juegos/${juego.img_1}" 
                         class="img-uniform border border-dark border-1"
                     >
                 </a>
@@ -120,7 +120,7 @@ function ordenarJuegosPorDuracion(ordenamiento)
                 <a href="producto.html?juego=${juego.link}">
                     <span>${juego.nombre} - ${juego.duracionPartida} min</span>
                     <img 
-                        src="images/juegos/${juego.img}" 
+                        src="images/juegos/${juego.img_1}" 
                         class="img-uniform border border-dark border-1"
                     >
                 </a>
@@ -151,7 +151,7 @@ function ordenarJuegosPorComplejidad(ordenamiento)
                 <a href="producto.html?juego=${juego.link}">
                     <span>${juego.nombre} - Complejidad ${juego.complejidad}/5</span>
                     <img 
-                        src="images/juegos/${juego.img}" 
+                        src="images/juegos/${juego.img_1}" 
                         class="img-uniform border border-dark border-1"
                     >
                 </a>
