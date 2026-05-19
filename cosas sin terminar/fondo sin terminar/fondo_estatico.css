@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/layout/fondo.jpg');
+  background-size: cover;       /* Hace que la imagen cubra todo el área */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  height: 100vh;                /* Asegura que ocupe toda la altura de la ventana */
+}

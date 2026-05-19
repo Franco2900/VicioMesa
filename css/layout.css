@@ -1,0 +1,11 @@
+/* 20 pixeles de padding a todas las vistas */
+main div
+{
+  padding: 20px;
+}
+
+/* Flechas negras para carruseles*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}

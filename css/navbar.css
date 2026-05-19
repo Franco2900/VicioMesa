@@ -1,0 +1,33 @@
+.navbar {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+  color: #f8f9fa !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important; /* Amarillo dorado al pasar el mouse */
+}
+
+/* Selector de idioma */
+.bootstrap-select .dropdown-toggle {
+  background-color: #212529 !important; /* Negro */
+  color: #f8f9fa !important;           /* Blanco */
+  border: none;
+}
+
+.bootstrap-select .dropdown-menu {
+  background-color: #212529;
+}
+
+.bootstrap-select .dropdown-item {
+  color: #f8f9fa;
+}
+
+.bootstrap-select .dropdown-item:hover {
+  background-color: #343a40;
+  color: #ffc107;
+}

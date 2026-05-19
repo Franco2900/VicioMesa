@@ -1,0 +1,119 @@
+<link rel="stylesheet" type="text/css" href="css/juegos.css">
+
+<h5 data-i18n="top3title"></h5>
+<div class="row">
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=ajedrez">
+               <span data-i18n="top1"></span>
+               <img 
+                    src="images/juegos/ajedrez 1.webp" 
+                    class="img-uniform border border-dark border-1"
+               >
+          </a>
+     </div>
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=truco">
+          <span data-i18n="top2"></span>
+          <img 
+               src="images/juegos/truco 1.jpg" 
+               class="img-uniform border border-dark border-1"
+          >
+          </a>
+     </div>
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=damas">
+          <span data-i18n="top3"></span>
+          <img 
+               src="images/juegos/damas 1.webp" 
+               class="img-uniform border border-dark border-1"
+          >
+          </a>
+     </div>
+
+</div>
+
+<br>
+
+
+<h5 data-i18n="allGames"></h5>
+
+<!-- Filtros -->
+
+<!-- Busca los juegos por nombre -->
+<input  
+    id="nombre" 
+    type="text"
+    data-i18n="searchName"
+    class="form-control mb-3"
+/>
+
+<!-- Busca los precios por rango de precios -->
+<div class="d-flex gap-2">
+
+
+     <input  
+          id="precioMin" 
+          type="number"
+          data-i18n="searchMinPrice"
+          class="form-control"
+     />
+
+     <input  
+          id="precioMax" 
+          type="number"
+          data-i18n="searchMaxPrice"
+          class="form-control"
+     />
+
+</div>
+
+<small 
+     class="text-center text-muted d-block mb-2" 
+     data-i18n="searchPriceHelp"
+>
+</small>
+
+<!-- Botón para reiniciar filtros -->
+<div class="text-center">
+    <button 
+          id="resetFiltros" 
+          class="btn btn-secondary"
+          data-i18n="resetFilters"
+     >
+    </button>
+</div>
+
+
+<!-- Ordenamiento de juegos -->
+<div class="mb-3">
+    <label for="ordenGeneral" class="form-label fw-bold" data-i18n="orderGames"></label>
+    <select id="ordenGeneral" class="form-select">
+        <option value="" data-i18n="orderNone"></option>
+        <option value="precioAsc" data-i18n="orderPriceAsc"></option>
+        <option value="precioDesc" data-i18n="orderPriceDesc"></option>
+        <option value="duracionAsc" data-i18n="orderDurationAsc"></option>
+        <option value="duracionDesc" data-i18n="orderDurationDesc"></option>
+        <option value="complejidadAsc" data-i18n="orderComplexityAsc"></option>
+        <option value="complejidadDesc" data-i18n="orderComplexityDesc"></option>
+    </select>
+</div>
+
+
+
+
+<!-- Lugar para almacenar los juegos -->
+<div 
+     id="juegos-container" 
+     class="row"
+>
+</div>
+
+<!-- Páginas de navegación -->
+<div 
+     id="pagination"
+     class="pagination"
+>
+</div>

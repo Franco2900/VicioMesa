@@ -1,0 +1,117 @@
+<link rel="stylesheet" type="text/css" href="css/juegos.css">
+
+<h5>Top 3 juegos más populares</h5>
+<div class="row">
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=ajedrez">
+               <span>Ajedrez</span>
+               <img 
+                    src="images/juegos/ajedrez 1.webp" 
+                    class="img-uniform border border-dark border-1"
+               >
+          </a>
+     </div>
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=truco">
+          <span>Truco</span>
+          <img 
+               src="images/juegos/truco 1.jpg" 
+               class="img-uniform border border-dark border-1"
+          >
+          </a>
+     </div>
+
+     <div class="col-4 text-center juego-card">
+          <a href="/producto.html?juego=damas">
+          <span>Damas</span>
+          <img 
+               src="images/juegos/damas 1.webp" 
+               class="img-uniform border border-dark border-1"
+          >
+          </a>
+     </div>
+
+</div>
+
+<br>
+
+
+<h5>Todos nuestros juegos</h5>
+
+<!-- Filtros -->
+
+<!-- Busca los juegos por nombre -->
+<input  
+    id="nombre" 
+    type="text"
+    placeholder="Buscar juego..."
+    class="form-control mb-3"
+/>
+
+<!-- Busca los precios por rango de precios -->
+<div class="d-flex gap-2">
+
+
+     <input  
+          id="precioMin" 
+          type="number"
+          placeholder="Precio mínimo..."
+          class="form-control"
+     />
+
+     <input  
+          id="precioMax" 
+          type="number"
+          placeholder="Precio máximo..."
+          class="form-control"
+     />
+
+</div>
+
+<small class="text-center text-muted d-block mb-2" >
+Podés buscar por precio mínimo, por precio máximo o por ambos a la vez
+</small>
+
+<!-- Botón para reiniciar filtros -->
+<div class="text-center">
+    <button 
+          id="resetFiltros" 
+          class="btn btn-secondary"
+     >
+     Reiniciar filtros
+    </button>
+</div>
+
+
+<!-- Ordenamiento de juegos -->
+<div class="mb-3">
+    <label for="ordenGeneral" class="form-label fw-bold">Ordenar juegos:</label>
+    <select id="ordenGeneral" class="form-select">
+        <option value="">-- Seleccionar --</option>
+        <option value="precioAsc">Precio: menor a mayor</option>
+        <option value="precioDesc">Precio: mayor a menor</option>
+        <option value="duracionAsc">Duración: menor a mayor</option>
+        <option value="duracionDesc">Duración: mayor a menor</option>
+        <option value="complejidadAsc">Complejidad: menor a mayor</option>
+        <option value="complejidadDesc">Complejidad: mayor a menor</option>
+    </select>
+</div>
+
+
+
+
+<!-- Lugar para almacenar los juegos -->
+<div 
+     id="juegos-container" 
+     class="row"
+>
+</div>
+
+<!-- Páginas de navegación -->
+<div 
+     id="pagination"
+     class="pagination"
+>
+</div>

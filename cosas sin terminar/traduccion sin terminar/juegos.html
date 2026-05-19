@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Somos VicioMesa, tu tienda local donde puedes comprar tus juegos de mesa favoritos">
+
+     <title>VicioMesa</title>
+     <link rel="icon" type="image/x-icon" href="images/layout/favicon.ico">
+     
+     <!-- Hoja de estilo del layout --> <link href="css/layout.css" rel="stylesheet" type="text/css">
+
+     <!-- Bootstrap CSS -->        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap Icons -->      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+     <!-- Bootstrap Select CSS --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+     <!-- Font Awesome CSS -->     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+     <!-- Flag Icons -->           <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css" rel="stylesheet">
+</head>
+
+<body class='light-mode' >
+
+     <!-- LAYOUT -->
+     <div id="header"></div>
+     <div id="navbar"></div>
+     <div id="fondo"></div>
+
+     <!-- Contenido de la vista -->
+     <main id="main-container" class="container">
+          <div id="juegos_body"></div>
+     </main>
+
+     <div id="footer"></div>
+
+     <!-- SCRIPTS -->
+     <!-- Bootstrap JS -->    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Font Awesome JS --> <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+     <!-- jQuery (necesario para Bootstrap Select) --> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Bootstrap Select JS --> <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+     <!-- Carga layout -->    <script src="./js/layoutLoader.js"></script>
+     <!-- Traducciones -->    <script src="./js/i18n.js"></script>
+
+     <!-- Script específicos de esta vista -->
+     <script src="./js/juegosData.js"></script>
+     <script src="./js/juegosPaginacion.js"></script>
+     <script src="./js/juegosFiltros.js"></script>
+     <script src="./js/juegosEventos.js"></script>
+
+     <script>
+          cargarFragmentoHTML("juegos_body", "./juegos_body.html")
+          .then(() => {
+               inicializarEventos();
+          });
+     </script>
+
+</body>
+
+</html>
